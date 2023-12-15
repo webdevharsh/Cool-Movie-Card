@@ -1,0 +1,99 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+*{
+margin:0;  
+padding:0;
+box-sizing:border-box;
+}  
+
+body{
+background:#FEF9F3; 
+font-family: 'Montserrat', sans-serif;
+background:#212025;
+background:white
+}
+
+.container{
+height:480px;    
+width:285px;
+background:black;
+border-radius:10px;
+position:absolute;
+top:50%;
+left:50%;
+transform:translate(-50%,-50%);
+overflow:hidden;
+transition:all .2s;
+cursor:pointer;
+}
+
+.container img{
+border-radius:10px;  
+height:100%;
+width:100%;
+transition:all .2s;
+cursor:pointer;
+}
+
+.bg-img:hover{
+transform:scale(1.4);  
+transition:all .2s;
+}
+
+.container .info{
+width:100%;
+background:linear-gradient(to top,#000 70%,transparent);
+position:absolute;
+bottom:-200px;
+transition:all .2s;
+color:white;
+padding:18px;
+padding-right:10px;
+}
+
+.bg-img:hover ~ .info{
+bottom:0;  
+transition:all .2s;
+}
+
+.container .top-bg{
+height:50px;
+width:100%;
+background:linear-gradient(to bottom, #000 4%, transparent);
+position:absolute;
+top:0px;
+transition:all .2s;      
+}
+
+.container .info .movie-name{
+margin-top:25px;  
+font-size:16px;
+}
+
+.container .info .oth-detail{
+font-size:9px; 
+margin-top:10px;
+letter-spacing:1px;
+}
+
+.container .info .description{
+font-size:11px;
+color:grey;
+margin-top:20px;
+color:white;
+font-weight:300;
+}
+
+.container .info .stars{
+margin-top:7px;  
+font-size:10px;
+}
+
+.container .info .stars i{
+margin-left:5px;   
+position:relative;
+left:-5px;
+}
+
+.container .info .stars .rating{
+color:#F3C23F;        
+  }
